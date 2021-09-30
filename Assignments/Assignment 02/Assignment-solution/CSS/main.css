@@ -1,0 +1,10 @@
+#restaurant-table tr:hover {
+  cursor: pointer;
+}
+#leaflet {
+  height: 400px;
+}
+
+body {
+  background-color: rgba(147, 194, 194, 0.576);
+}
