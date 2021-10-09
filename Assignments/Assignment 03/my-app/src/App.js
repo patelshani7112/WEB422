@@ -16,7 +16,7 @@ import { useHistory } from "react-router-dom";
 import About from "./component/About";
 import Restaurant from "./component/Restaurant";
 import Restaurants from "./component/Restaurants";
-import NotFound from "./component/NotFound"
+import NotFound from "./component/NotFound";
 
 function App() {
   const [searchString, setSearchString] = useState("");
@@ -60,31 +60,30 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <br />
+      <Container>
+        <Row>
+          <Col>
+            <Switch>
+              <Route exact path="/">
+                <Redirect to="/Restaurants" />
+              </Route>
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route exact path="/Restaurants">
+                <Restaurants />
+              </Route>
+              <Route path="/Restaurant/:id">
+                <Restaurant />
+              </Route>
+              <Route>
+                <NotFound />
+              </Route>
+            </Switch>
+          </Col>
+        </Row>
+      </Container>
     </>
-    <Container>
-    <Row>
-      <Col>
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/Restaurants" />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/Restaurants">
-            <Restaurants />
-          </Route>
-          <Route path="/Restaurant/:id">
-            <Restaurant />
-          </Route>
-          <Route>
-            <NotFound />
-          </Route>
-        </Switch>
-      </Col>
-    </Row>
-  </Container>
-</>
   );
 }
 
