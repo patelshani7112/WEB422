@@ -9,19 +9,19 @@ function About() {
         <Card.Title>Studet Information</Card.Title>
         <ListGroup className="list-group-flush">
           <ListGroupItem>
-            Student Name<strong>Shani Patel</strong>
+            <strong>Student Name:</strong> Shani Patel
           </ListGroupItem>
           <ListGroupItem>
-            Student ID # :<strong>152243192</strong>
+            <strong>Student ID # :</strong> 152243192
           </ListGroupItem>
           <ListGroupItem>
-            Assignment : <strong>WEB 422 - Assignment 03: my-app</strong>
+            <strong>Assignment :</strong> WEB 422 - Assignment 03: my-app
           </ListGroupItem>
           <ListGroupItem>
-            submission Date:<strong>October 14, 2021</strong>
+            <strong>submission Date:</strong> October 14, 2021
           </ListGroupItem>
           <ListGroupItem>
-            submission Due Date: <strong>October 15, 2021</strong>
+            <strong>submission Due Date:</strong> October 15, 2021
           </ListGroupItem>
         </ListGroup>
       </Card.Body>
